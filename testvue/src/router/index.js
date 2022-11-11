@@ -34,6 +34,16 @@ const routes = [
     path: '/boardedit',
     name: 'BoardEdit',
     component: () => import('../views/BoardEdit.vue')
+  },
+  {
+    path: '/score',
+    name: 'Score',
+    component: () => import('../views/ScoreView.vue')
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import('../views/Login.vue')
   }
 ];
 

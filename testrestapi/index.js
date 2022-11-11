@@ -12,8 +12,9 @@ app.use(function (req, res, next) {
     next();
   });
 
+  //app.use('/boards', require('./authmiddleware'));//전체 JWT검증 사용
   app.use('/boards', require('./boardapi'));
-
+  app.use('/members', require('./memberapi'));
   app.listen(9000, () => {
 	console.log('Listening...');
 });
